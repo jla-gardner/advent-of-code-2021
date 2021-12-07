@@ -4,6 +4,9 @@ function getinput(day)
     end
 end
 
-int(s) = parse(Int, s)
+int(s::AbstractString) = parse(Int, s)
+int(x) = convert(Int, x)
 
 spliton(pattern) = x -> split(x, pattern)
+
+±(x, a) = [x + a, x - a]
