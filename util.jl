@@ -5,3 +5,5 @@ function getinput(day)
 end
 
 int(s) = parse(Int, s)
+
+spliton(pattern) = x -> split(x, pattern)
