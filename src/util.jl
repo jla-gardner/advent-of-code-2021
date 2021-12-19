@@ -7,7 +7,7 @@ function getinput(day)
 end
 
 int(s::AbstractString) = parse(Int, s)
-int(x) = convert(Int, x)
+int(x::Number) = convert(Int, x)
 
 spliton(pattern) = x -> split(x, pattern)
 

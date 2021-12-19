@@ -1,0 +1,1 @@
+hello(x) = println("Goodbye, $x")
